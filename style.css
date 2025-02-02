@@ -335,3 +335,55 @@ body {
 .righ {
   margin: 0.1rem;
 }
+
+.spotify-slider {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  width: 100%; /* Full width */
+  height: 4px; /* Height of the track */
+  background: #535353; /* Default track color */
+  border-radius: 2px; /* Rounded corners for the track */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Slightly transparent */
+  transition: opacity 0.2s; /* Smooth transition for hover effect */
+}
+
+.spotify-slider:hover {
+  opacity: 1; /* Fully opaque on hover */
+}
+
+/* Custom thumb (circle) */
+.spotify-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  margin-top: -5px;
+  width: 12px; /* Size of the thumb */
+  height: 12px;
+  background: #fff; /* White thumb */
+  border-radius: 50%; /* Circular thumb */
+  cursor: pointer; /* Pointer cursor */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.spotify-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #d70c0c;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Filled portion of the track */
+.spotify-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #333534; /* Spotify green for the filled portion */
+  border-radius: 2px;
+  margin: 1rem;
+}
+
+.spotify-slider::-moz-range-track {
+  height: 4px;
+  background: #1db954;
+  border-radius: 2px;
+}
